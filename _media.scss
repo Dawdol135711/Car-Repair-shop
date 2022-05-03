@@ -1,0 +1,11 @@
+.nav__ul__li__a--icon{
+    display:none;
+}
+@media (max-width: 700px) {
+	.nav__ul__li__a {
+		display: none;
+	}
+	.nav__ul__li__a--icon {
+		display: block;
+	}
+}
