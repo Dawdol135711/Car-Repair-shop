@@ -6,7 +6,12 @@
   font-size: 62.5%;
 }
 
+body {
+  height: 500vh;
+}
+
 .nav {
+  z-index: 10;
   width: 100vw;
   background-color: #000000;
   position: fixed;
@@ -45,10 +50,10 @@
   color: #fff;
   font-size: 2.5rem;
   padding: 2rem 1rem;
-  line-height: 5rem;
+  line-height: 6rem;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'roboto';
+  font-family: "roboto";
   letter-spacing: 2px;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
@@ -56,6 +61,61 @@
 
 .nav__ul__li__a:hover {
   color: #ddd;
+}
+
+.header {
+  height: 100vh;
+  background-image: url(/img/car-g723b20bd8_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__shadow {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.5);
+}
+
+.header__text {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__text__shop-name {
+  text-align: center;
+  z-index: 5;
+  color: #fff;
+  font-size: 10rem;
+  text-transform: uppercase;
+}
+
+.header__link {
+  font-size: 10rem;
+  color: #fff;
+  position: absolute;
+  bottom: 3rem;
+  z-index: 5;
 }
 
 .nav__ul__li__a--icon {

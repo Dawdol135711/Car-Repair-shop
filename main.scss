@@ -4,48 +4,90 @@
 	padding: 0;
 	font-family: "Montserrat", sans-serif;
 	font-family: "Roboto", sans-serif;
-    font-size:62.5%;
+	font-size: 62.5%;
+}
+body {
+	height: 500vh;
 }
 .nav {
+	z-index: 10;
 	width: 100vw;
-    background-color: #000000;
-    position: fixed;
-    border-radius: 0px 0px 5px 5px;
+	background-color: #000000;
+	position: fixed;
+	border-radius: 0px 0px 5px 5px;
 
 	&__ul {
-        max-width:1200px;
-        margin:auto;
+		max-width: 1200px;
+		margin: auto;
 		display: flex;
-		justify-content:space-evenly;
+		justify-content: space-evenly;
 		&__li {
 			list-style: none;
-            &--logo{
-                color:$text-color;
-                font-size: 4rem;
-                list-style: none;
-                margin-right:10rem;
-                transition: color 0.3s;
-        
-            }
-            &--logo:hover{
-                color:$second-color;
-            }
-            &__a{
-                color:$text-color;
-                font-size: 2.5rem;
-                padding: 2rem 1rem;
-                line-height: 5rem;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-family: 'roboto';
-                letter-spacing: 2px;
-                transition: color 0.3s;
-            }
-            &__a:hover{
-                color:$second-color;
-            }
+			&--logo {
+				color: $text-color;
+				font-size: 4rem;
+				list-style: none;
+				margin-right: 10rem;
+				transition: color 0.3s;
+			}
+			&--logo:hover {
+				color: $second-color;
+			}
+			&__a {
+				color: $text-color;
+				font-size: 2.5rem;
+				padding: 2rem 1rem;
+				line-height: 6rem;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-family: "roboto";
+				letter-spacing: 2px;
+				transition: color 0.3s;
+			}
+			&__a:hover {
+				color: $second-color;
+			}
 		}
 	}
 }
+.header {
+	height: 100vh;
+	background-image: url(/img/car-g723b20bd8_1920.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 0px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__shadow {
+		z-index: 1;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(20, 20, 20, 0.5);
+	}
+	&__text {
+		width: 100vw;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+	}
+	&__text__shop-name {
+		text-align: center;
+		z-index: 5;
+		color: $text-color;
+		font-size: 10rem;
+		text-transform: uppercase;
+	}
+    &__link{
+        font-size: 10rem;
+        color:$text-color;
+        position: absolute;
+        bottom:3rem;
+        z-index: 5;
 
-@import 'media'
+    }
+}
+
+@import "media";
