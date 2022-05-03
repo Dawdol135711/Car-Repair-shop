@@ -4,4 +4,45 @@
 	padding: 0;
 	font-family: "Montserrat", sans-serif;
 	font-family: "Roboto", sans-serif;
+    font-size:62.5%;
+}
+.nav {
+	width: 100vw;
+    background-color: #000000;
+    position: fixed;
+
+	&__ul {
+        max-width:1200px;
+        margin:auto;
+		display: flex;
+		justify-content:space-evenly;
+		&__li {
+			list-style: none;
+            &--logo{
+                color:$text-color;
+                font-size: 4rem;
+                list-style: none;
+                margin-right:10rem;
+                transition: color 0.3s;
+        
+            }
+            &--logo:hover{
+                color:$second-color;
+            }
+            &__a{
+                color:$text-color;
+                font-size: 2.5rem;
+                padding: 2rem 1rem;
+                line-height: 7rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: 'roboto';
+                letter-spacing: 2px;
+                transition: color 0.3s;
+            }
+            &__a:hover{
+                color:$second-color;
+            }
+		}
+	}
 }
