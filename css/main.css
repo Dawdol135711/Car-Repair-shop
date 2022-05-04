@@ -106,7 +106,7 @@ body {
   text-align: center;
   z-index: 5;
   color: #fff;
-  font-size: 10rem;
+  font-size: 4rem;
   text-transform: uppercase;
 }
 
@@ -118,16 +118,35 @@ body {
   z-index: 5;
 }
 
-.nav__ul__li__a--icon {
+.nav__ul__li__a {
   display: none;
 }
 
-@media (max-width: 700px) {
+.nav__ul__li__a--icon {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .header__text__shop-name {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
   .nav__ul__li__a {
-    display: none;
+    display: block;
   }
   .nav__ul__li__a--icon {
-    display: block;
+    display: none;
+  }
+  .header__text__shop-name {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header__text__shop-name {
+    font-size: 10rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
