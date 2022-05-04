@@ -69,9 +69,9 @@ body {
 	}
 	&__text {
 		width: 100vw;
-        display:flex;
-        justify-content: center;
-        align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	&__text__shop-name {
 		text-align: center;
@@ -80,14 +80,70 @@ body {
 		font-size: 4rem;
 		text-transform: uppercase;
 	}
-    &__link{
-        font-size: 10rem;
-        color:$text-color;
-        position: absolute;
-        bottom:3rem;
-        z-index: 5;
-
-    }
+	&__link {
+		font-size: 10rem;
+		color: $text-color;
+		position: absolute;
+		bottom: 3rem;
+		z-index: 5;
+	}
 }
-
+.wrapper {
+	&__h1 {
+		font-family: "Montserrat";
+		font-size: 5rem;
+		text-align: center;
+		margin-top: 7rem;
+		font-weight: bold;
+		letter-spacing: 2px;
+	}
+	&__section {
+		margin-top: 7rem;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		&__card {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			margin-bottom: 5rem;
+			height: 600px;
+			width: 450px;
+			background-size: cover;
+			background-position: center;
+			border-radius: 15px;
+			overflow: hidden;
+			&--1 {
+				background-image: url(/img/car-gbce2eb509_640.jpg);
+			}
+			&--2 {
+				background-image: url(/img/jeep-g4e4b5a84e_640.jpg);
+			}
+			&--3 {
+				background-image: url(/img/engineer-g2daa928df_640.jpg);
+			}
+			&__description {
+				position: absolute;
+				// top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				font-family: "montserrat";
+				text-align: center;
+				padding: 2rem;
+				color: $text-color;
+				font-size: 2rem;
+				letter-spacing: 1px;
+				line-height: 3rem;
+				background-color: rgba(0, 0, 0, 0.5);
+				clip-path: circle(0 at 50% 50%);
+				transition: clip-path 0.8s;
+			}
+		}
+		&__card:hover > .wrapper__section__card__description{
+			clip-path: circle(200% at 50% 50%);
+		}
+	}
+}
 @import "media";

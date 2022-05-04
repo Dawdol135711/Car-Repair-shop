@@ -118,6 +118,85 @@ body {
   z-index: 5;
 }
 
+.wrapper__h1 {
+  font-family: "Montserrat";
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 7rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.wrapper__section {
+  margin-top: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrapper__section__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 5rem;
+  height: 600px;
+  width: 450px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.wrapper__section__card--1 {
+  background-image: url(/img/car-gbce2eb509_640.jpg);
+}
+
+.wrapper__section__card--2 {
+  background-image: url(/img/jeep-g4e4b5a84e_640.jpg);
+}
+
+.wrapper__section__card--3 {
+  background-image: url(/img/engineer-g2daa928df_640.jpg);
+}
+
+.wrapper__section__card__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: "montserrat";
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-clip-path: circle(0 at 50% 50%);
+          clip-path: circle(0 at 50% 50%);
+  -webkit-transition: -webkit-clip-path 0.8s;
+  transition: -webkit-clip-path 0.8s;
+  transition: clip-path 0.8s;
+  transition: clip-path 0.8s, -webkit-clip-path 0.8s;
+}
+
+.wrapper__section__card:hover > .wrapper__section__card__description {
+  -webkit-clip-path: circle(200% at 50% 50%);
+          clip-path: circle(200% at 50% 50%);
+}
+
 .nav__ul__li__a {
   display: none;
 }
