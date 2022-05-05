@@ -17,6 +17,7 @@ body {
 	border-radius: 0px 0px 5px 5px;
 
 	&__ul {
+		position: relative;
 		max-width: 1200px;
 		margin: auto;
 		display: flex;
@@ -24,6 +25,9 @@ body {
 		&__li {
 			list-style: none;
 			&--logo {
+				position: absolute;
+				top:0.4rem;
+				left:0.5rem;
 				color: $text-color;
 				font-size: 4rem;
 				list-style: none;
@@ -37,7 +41,7 @@ body {
 				color: $text-color;
 				font-size: 2.5rem;
 				padding: 2rem 1rem;
-				line-height: 6rem;
+				line-height: 3rem;
 				text-decoration: none;
 				text-transform: uppercase;
 				font-family: "roboto";
@@ -56,7 +60,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: 0px 0px;
+	background-position: 0px -150px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -113,6 +117,7 @@ body {
 			background-size: cover;
 			background-position: center;
 			border-radius: 15px;
+			box-shadow: 5px 5px 5px;
 			overflow: hidden;
 			&--1 {
 				background-image: url(/img/car-gbce2eb509_640.jpg);
@@ -137,8 +142,8 @@ body {
 				letter-spacing: 1px;
 				line-height: 3rem;
 				background-color: rgba(0, 0, 0, 0.5);
-				clip-path: circle(0 at 50% 50%);
-				transition: clip-path 0.8s;
+				clip-path: circle(0 at 50% 0%);
+				transition: clip-path 1s;
 			}
 		}
 		&__card:hover > .wrapper__section__card__description{

@@ -19,6 +19,7 @@ body {
 }
 
 .nav__ul {
+  position: relative;
   max-width: 1200px;
   margin: auto;
   display: -webkit-box;
@@ -34,6 +35,9 @@ body {
 }
 
 .nav__ul__li--logo {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.5rem;
   color: #fff;
   font-size: 4rem;
   list-style: none;
@@ -50,7 +54,7 @@ body {
   color: #fff;
   font-size: 2.5rem;
   padding: 2rem 1rem;
-  line-height: 6rem;
+  line-height: 3rem;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "roboto";
@@ -69,7 +73,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 0px 0px;
+  background-position: 0px -150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,6 +160,8 @@ body {
   background-size: cover;
   background-position: center;
   border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 5px;
+          box-shadow: 5px 5px 5px;
   overflow: hidden;
 }
 
@@ -184,12 +190,12 @@ body {
   letter-spacing: 1px;
   line-height: 3rem;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-clip-path: circle(0 at 50% 50%);
-          clip-path: circle(0 at 50% 50%);
-  -webkit-transition: -webkit-clip-path 0.8s;
-  transition: -webkit-clip-path 0.8s;
-  transition: clip-path 0.8s;
-  transition: clip-path 0.8s, -webkit-clip-path 0.8s;
+  -webkit-clip-path: circle(0 at 50% 0%);
+          clip-path: circle(0 at 50% 0%);
+  -webkit-transition: -webkit-clip-path 1s;
+  transition: -webkit-clip-path 1s;
+  transition: clip-path 1s;
+  transition: clip-path 1s, -webkit-clip-path 1s;
 }
 
 .wrapper__section__card:hover > .wrapper__section__card__description {
